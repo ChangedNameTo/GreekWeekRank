@@ -26,6 +26,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+# Removes a deprecation warning
+gem 'sprockets', '3.6.3'
 
 ###########
 # My Gems #
@@ -44,6 +46,10 @@ gem 'jquery-timepicker-rails'
 gem 'jquery-ui-rails'
 # Turns markdown into valid html
 gem 'redcarpet'
+# Google oauth for user logins
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+# Pundit manages user roles
+gem 'pundit'
 
 
 group :development, :test do
