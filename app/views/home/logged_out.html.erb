@@ -1,2 +1,16 @@
-<h1>Home#logged_out</h1>
-<p>Find me in app/views/home/logged_out.html.erb</p>
+<% render 'layouts/header' %>
+
+<div class="ui container segment">
+  <h1 class="ui center aligned header">
+    You are not logged in.
+  </h1>
+  <h3 class="ui center aligned header">
+    Please sign in to continue
+  </h3>
+  <%= link_to "/auth/google_oauth2", :class=> "ui google plus fluid button" do %>
+		<i class="google plus icon"></i>
+  <% end %>
+
+</div>
+
+<% render 'layouts/footer' %>
